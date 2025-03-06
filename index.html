@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best robotic kits to enhance your learning experience.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind generated CSS -->
+    <link href="css/output.css" rel="stylesheet">
+    <!-- Slick Slider included -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.svg" />
+    <title>Talently</title>
+</head>
+<body>
+    <!-- Top navbar and Banner -->
+    <header class="relative">
+        <div class="container">
+            <nav class="pt-10 pb-8 flex items-center justify-between relative z-50 px-4 md:px-8">
+                <!-- Logo -->
+                <a href="index.html"><img src="images/Logo.svg" alt="Smart Admissions"></a>
+            
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-12 items-center">
+                  <li><a href="javascript:void(0);" class="text-sm text-white font-Avenir">Features</a></li>
+                  <li><a href="javascript:void(0);" class="text-sm text-white font-Avenir">Testimonials</a></li>
+                  <li><a href="javascript:void(0);" class="text-sm text-white font-Avenir">Pricing</a></li>
+                </ul>
+            
+                <!-- Desktop Buttons -->
+                <div class="hidden md:flex items-center space-x-3">
+                  <a href="javascript:void(0);" class="flex items-center justify-center text-sm text-white rounded-[72px] h-9">Book a demo</a>
+                  <a href="javascript:void(0);" class="py-[11px] px-7 flex items-center justify-center text-sm text-white rounded-[72px] h-9 border border-[#E5E7EB]">Sign in</a>
+                </div>
+            
+                <!-- Hamburger Menu (Mobile) -->
+                <button class="md:hidden text-white focus:outline-none cursor-pointer" onclick="toggleMenu()">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden p-4 relative z-50">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="javascript:void(0);" class="text-sm text-white font-Avenir">Features</a></li>
+                <li><a href="javascript:void(0);" class="text-sm text-white font-Avenir">Testimonials</a></li>
+                <li><a href="javascript:void(0);" class="text-sm text-white font-Avenir">Pricing</a></li>
+            </ul>
+            <div class="flex flex-col space-y-4 mt-4">
+                <a href="javascript:void(0);" class="flex items-center justify-center text-sm text-white rounded-[72px] h-9">Book a demo</a>
+                <a href="javascript:void(0);" class="py-[11px] px-7 flex items-center justify-center text-sm text-white rounded-[72px] h-9 border border-[#E5E7EB]">Sign in</a>
+            </div>
+            </div>
+            <div class="max-lg:pt-8 lg:pt-20 max-lg:px-4 lg:px-18 bg-[#1F1E24] rounded-[20px]  relative z-50 max-xl:mx-5">
+                <div class="bg-[url('/images/circles-bg.svg')] bg-cover bg-center relative">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 bg-[#10C59A] rounded-full"></span>
+                        <p class="text-base text-white">Admissions</p>
+                    </div>
+                    <div class="flex flex-col lg:max-w-[734px] w-full text-center mx-auto mt-5">
+                        <h1 class="max-lg:text-3xl lg:text-[65px] font-semibold text-white leading-[100%] mb-6"><b class="text-[#00BBF9]">AI-Powered</b> University Admission Interviews</h1>
+                        <p class="text-base leading-[139%] text-white mb-8">Interview more applicants, faster. Smart Admissions by Talently enables universities to conduct AI-driven, real-time interviews—saving time, reducing bias, and delivering instant candidate insights.</p>
+                        <div class="flex items-center space-x-2 justify-center">
+                            <a href="javascript:void(0);" class="w-[184px] h-[58px] text-white text-base  bg-[linear-gradient(180deg,#0068EC,#00BBF9)] rounded-[100px] flex items-center justify-center">Book a Demo</a>
+                            <a href="javascript:void(0);" class="w-[184px] h-[58px] text-white text-base border border-white rounded-[100px] flex items-center justify-center">Try AI Interview</a>
+                        </div>
+                    </div>
+                    <div class="ripple absolute top-0 right-0"></div>
+                    <div class="w-full max-md:h-[200px] lg:h-[480px] rounded-[20px] overflow-hidden mt-18">
+                        <img src="images/banner-image.png" alt="Banner Image" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-0 left-0 right-0 bg-black block h-2/3"></div>
+        </div>
+    </header>
+    <main>
+        <!-- Why choose smart admissions -->
+        <section class="max-md:py-8 py-28 max-2xl:px-5">
+                <h2 class="max-lg:text-3xl lg:text-[40px] font-bold text-[#111827] text-center max-w-[550px] w-full mx-auto">Why Choose Smart Admissions?</h2>
+                <div class="grid grid-cols-12 gap-6 max-w-[1400px] mx-auto max-2xl:ml-auto mt-12">
+                    <div class="max-md:col-span-12 max-lg:col-span-6 lg:col-span-3 max-md:p-5 py-[50px] px-[39px] bg-[#F8FBFF] rounded-[10px] flex flex-col gap-7 items-start">
+                        <img src="images/choose-icon1.svg" alt="Save TIme Icon">
+                        <h4 class="text-xl text-[#111827] font-bold">Save Time</h4>
+                        <p class="text-base text-[#6B7280]">Automate the interview process and evaluate candidates instantly no scheduling conflicts, no manual screening.
+                        </p>
+                    </div>
+                    <div class="max-md:col-span-12 max-lg:col-span-6 lg:col-span-3 max-md:p-5 py-[50px] px-[39px] bg-[#F4EBFF]/50 rounded-[10px] flex flex-col gap-7 items-start">
+                        <img src="images/choose-icon2.svg" alt="Scalable Interviews Icon">
+                        <h4 class="text-xl text-[#111827] font-bold">Scalable Interviews</h4>
+                        <p class="text-base text-[#6B7280]">Ensure every applicant experiences the same structured, high-quality interview process, no matter how many candidates apply.
+                        </p>
+                    </div>
+                    <div class="max-md:col-span-12 max-lg:col-span-6 lg:col-span-3 max-md:p-5 py-[50px] px-[39px] bg-[#F8FBFF] rounded-[10px] flex flex-col gap-7 items-start">
+                        <img src="images/choose-icon3.svg" alt="Actionable Insights Icon">
+                        <h4 class="text-xl text-[#111827] font-bold">Actionable Insights</h4>
+                        <p class="text-base text-[#6B7280]">Ensure every applicant experiences the same structured, high-quality interview process, no matter how many candidates apply.
+                        </p>
+                    </div>
+                    <div class="max-md:col-span-12 max-lg:col-span-6 lg:col-span-3 max-md:p-5 py-[50px] px-[39px] bg-[#FAFAFA] rounded-[10px] flex flex-col gap-7 items-start">
+                        <img src="images/choose-icon4.svg" alt="Actionable Insights Icon">
+                        <h4 class="text-xl text-[#111827] font-bold">Seamless Integration</h4>
+                        <p class="text-base text-[#6B7280]">Easily integrate Smart Admissions with your existing admissions system for a smooth, hassle-free workflow.
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <!-- The Numbers Behind Our Success -->
+        <section class="max-md:py-8 py-12 bg-[#F8FBFF] max-2xl:px-5">
+            <div class="container">
+                <h3 class="max-lg:text-3xl lg:text-[40px] text-[#111827] font-bold">The Numbers Behind Our Success</h3>
+                <p class="text-base text-[#060640]/60 mt-2">Driving measurable results that make an impact.</p>
+                <div class="grid grid-cols-12 pt-7 md:gap-[57px] max-lg:space-y-5">
+                    <div class="max-md:col-span-12 max-lg:col-span-4 col-span-4 pt-3 border-t-[2px] border-[#36455D]/50">
+                        <h2 class="max-md:text-3xl text-5xl text-[#36455D] font-semibold">22,000+</h2>
+                        <p class="text-base font-medium text-[#36455D]">Interviews Successfully Conducted.</p>
+                    </div>
+                    <div class="max-md:col-span-12 max-lg:col-span-4 col-span-4 pt-3 border-t-[2px] border-[#36455D]/50">
+                        <h2 class="max-md:text-3xl text-5xl text-[#36455D] font-semibold">18,500+</h2>
+                        <p class="text-base font-medium text-[#36455D]">Successful Student Placement Achieved</p>
+                    </div>
+                    <div class="max-md:col-span-12 max-lg:col-span-4 col-span-4 pt-3 border-t-[2px] border-[#36455D]/50">
+                        <h2 class="max-md:text-3xl text-5xl text-[#36455D] font-semibold">97%</h2>
+                        <p class="text-base font-medium text-[#36455D]">Positive Interview Feedback</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How People Say About Us -->
+        <section class="max-md:py-8 testimonials py-25 max-2xl:px-5">
+            <h2 class="max-lg:text-3xl lg:text-[40px] font-bold text-[#111827] text-center max-w-[550px] w-full mx-auto">How People Say About Us</h2>
+            <p class="text-base text-[#445E7C] text-center">Hear from the visionary founders and brands we’ve helped grow.</p>
+            <div class="slider mt-8">
+                <div class="slide max-md:p-4 p-8 mx-3 bg-[#F5FCFF] rounded-[38px]">
+                    <div class="flex max-md:flex-col gap-10">
+                        <div class="max-md:max-h-[350px] lg:max-w-[207px] w-full h-full rounded-[20px] overflow-hidden flex-[207px] max-md:flex-1">
+                            <img src="images/reviewer3.png" alt="Client Image" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-between">
+                            <p class="text-xl leading-7 text-[#36455D] mb-7 max-md:text-base max-md:leading-6">“Talently.ai has completely changed our campus hiring strategy. Previously, we used to spend a lot of time interviewing students at the booths, which resulted in many students being missed due to long queues, but not anymore.”</p>
+                            <div>
+                                <h5 class="text-2xl text-[#36455D] font-bold">Sam Hugo</h5>
+                                <p class="text-base font-medium text-[#36455D]">HR Associate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide max-md:p-4 p-8 mx-3 bg-[#F5FCFF] rounded-[38px]">
+                    <div class="flex max-md:flex-col gap-10">
+                        <div class="max-md:max-h-[350px] lg:max-w-[207px] w-full h-full rounded-[20px] overflow-hidden flex-[207px] max-md:flex-1">
+                            <img src="images/reviewer2.png" alt="Client Image" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-between">
+                            <p class="text-xl leading-7 text-[#36455D] mb-7 max-md:text-base max-md:leading-6">“Talently.ai has completely changed our campus hiring strategy. Previously, we used to spend a lot of time interviewing students at the booths, which resulted in many students being missed due to long queues, but not anymore.”</p>
+                            <div>
+                                <h5 class="text-2xl text-[#36455D] font-bold">Martha Otis</h5>
+                                <p class="text-base font-medium text-[#36455D]">Technical Recruiter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide max-md:p-4 p-8 mx-3 bg-[#F5FCFF] rounded-[38px]">
+                   <div class="flex max-md:flex-col gap-10">
+                    <div class="max-md:max-h-[350px] lg:max-w-[207px] w-full h-full rounded-[20px] overflow-hidden flex-[207px] max-md:flex-1">
+                        <img src="images/reviewer1.png" alt="Client Image" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex flex-col flex-1 justify-between">
+                        <p class="text-xl leading-7 text-[#36455D] mb-7 max-md:text-base max-md:leading-6">“Talently.ai has completely changed our campus hiring strategy. Previously, we used to spend a lot of time interviewing students at the booths, which resulted in many students being missed due to long queues, but not anymore.”</p>
+                        <div>
+                            <h5 class="text-2xl text-[#36455D] font-bold">Will Nitze</h5>
+                            <p class="text-base font-medium text-[#36455D]">HR</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="slide max-md:p-4 p-8 mx-3 bg-[#F5FCFF] rounded-[38px]">
+                    <div class="flex max-md:flex-col gap-10">
+                        <div class="max-md:max-h-[350px] lg:max-w-[207px] w-full h-full rounded-[20px] overflow-hidden flex-[207px] max-md:flex-1">
+                            <img src="images/reviewer3.png" alt="Client Image" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-between">
+                            <p class="text-xl leading-7 text-[#36455D] mb-7 max-md:text-base max-md:leading-6">“Talently.ai has completely changed our campus hiring strategy. Previously, we used to spend a lot of time interviewing students at the booths, which resulted in many students being missed due to long queues, but not anymore.”</p>
+                            <div>
+                                <h5 class="text-2xl text-[#36455D] font-bold">Sam Hugo</h5>
+                                <p class="text-base font-medium text-[#36455D]">HR Associate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide max-md:p-4 p-8 mx-3 bg-[#F5FCFF] rounded-[38px]">
+                    <div class="flex max-md:flex-col gap-10">
+                        <div class="max-md:max-h-[350px] lg:max-w-[207px] w-full h-full rounded-[20px] overflow-hidden flex-[207px] max-md:flex-1">
+                            <img src="images/reviewer2.png" alt="Client Image" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="flex flex-col flex-1 justify-between">
+                            <p class="text-xl leading-7 text-[#36455D] mb-7 max-md:text-base max-md:leading-6">“Talently.ai has completely changed our campus hiring strategy. Previously, we used to spend a lot of time interviewing students at the booths, which resulted in many students being missed due to long queues, but not anymore.”</p>
+                            <div>
+                                <h5 class="text-2xl text-[#36455D] font-bold">Martha Otis</h5>
+                                <p class="text-base font-medium text-[#36455D]">Technical Recruiter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide max-md:p-4 p-8 mx-3 bg-[#F5FCFF] rounded-[38px]">
+                   <div class="flex max-md:flex-col gap-10">
+                    <div class="max-md:max-h-[350px] lg:max-w-[207px] w-full h-full rounded-[20px] overflow-hidden flex-[207px] max-md:flex-1">
+                        <img src="images/reviewer1.png" alt="Client Image" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex flex-col flex-1 justify-between">
+                        <p class="text-xl leading-7 text-[#36455D] mb-7 max-md:text-base max-md:leading-6">“Talently.ai has completely changed our campus hiring strategy. Previously, we used to spend a lot of time interviewing students at the booths, which resulted in many students being missed due to long queues, but not anymore.”</p>
+                        <div>
+                            <h5 class="text-2xl text-[#36455D] font-bold">Will Nitze</h5>
+                            <p class="text-base font-medium text-[#36455D]">HR</p>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- Get started for free. 2-Week trial. -->
+        <section class="max-md:py-8 py-25 bg-[#F8FBFF] overflow-hidden max-2xl:px-5">
+            <div class="container">
+                <h2 class="max-lg:text-3xl lg:text-[40px] font-bold text-[#111827] text-center max-w-[550px] w-full mx-auto">How People Say About Us</h2>
+                <p class="text-base text-[#445E7C] text-center">Hear from the visionary founders and brands we’ve helped grow.</p>
+                <div class="mx-auto flex justify-center">
+                    <div class="flex mx-auto items-center p-1 rounded-[100px] bg-[#F3F4F6] space-x-2 mt-14">
+                      <button id="monthly-button" class="py-3 px-5 text-base text-[#111827] font-medium rounded-[100px] cursor-pointer bg-white">Monthly Billing</button>
+                      <button id="yearly-button" class="py-3 px-5 text-base text-[#111827] font-medium rounded-[100px] cursor-pointer">Yearly Billing</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 space-x-4 mt-9 relative">
+                <!-- Basic Plan -->
+                <div class="max-md:col-span-12 max-lg:col-span-6 max-lg:mb-4 col-span-3">
+                    <div class="p-6 border border-[#E5E7EB] rounded-xl bg-white min-h-[401px]">
+                    <h6 class="text-base font-medium text-[#111827] mb-6">Basic</h6>
+                    <div class="inline-flex items-center relative space-x-1">
+                        <span id="basic-price" class="text-4xl font-bold text-[#111827]">$79</span>
+                        <span class="text-sm font-medium text-[#6B7280] align-sub">/</span>
+                        <span id="basic-frequency" class="text-sm font-medium text-[#6B7280] align-sub absolute bottom-0 -right-4">mo</span>
+                    </div>
+                    <hr class="border-[#E5E7EB] my-6 space-y-2">
+                    <ul class="flex flex-col space-y-2 min-h-[116px]">
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Up to 10 interviews/month</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Ability to add Custom Questions</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Live coding interview</p></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="h-[51px] w-full flex items-center justify-center text-sm hover:bg-[linear-gradient(180deg,#0068EC,#00BBF9)] text-[#0068EC] gradient-border relative mt-12  hover:text-white">Start for Free</a>
+                    </div>
+                </div>
+            
+                <!-- Standard Plan -->
+                <div class="max-md:col-span-12 max-lg:col-span-6 max-lg:mb-4 col-span-3">
+                    <div class="p-6 border border-[#E5E7EB] rounded-xl bg-white min-h-[401px]">
+                    <h6 class="text-base font-medium text-[#111827] mb-6">Standard</h6>
+                    <div class="inline-flex items-center relative space-x-1">
+                        <span id="standard-price" class="text-4xl font-bold text-[#111827]">$349</span>
+                        <span class="text-sm font-medium text-[#6B7280] align-sub">/</span>
+                        <span id="standard-frequency" class="text-sm font-medium text-[#6B7280] align-sub absolute bottom-0 -right-4">mo</span>
+                    </div>
+                    <hr class="border-[#E5E7EB] my-6 space-y-2">
+                    <ul class="flex flex-col space-y-2 min-h-[116px]">
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Up to 50 interviews/month</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Ability to add Custom Questions</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Live coding interview</p></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="h-[51px] w-full flex items-center justify-center text-sm hover:bg-[linear-gradient(180deg,#0068EC,#00BBF9)] text-[#0068EC] hover:text-white  gradient-border relative mt-12">Get Started</a>
+                    </div>
+                </div>
+            
+                <!-- Pro Plan -->
+                <div class="max-md:col-span-12 max-lg:col-span-6 max-lg:mb-4 col-span-3">
+                    <div class="p-6 border border-[#E5E7EB] rounded-xl bg-[#111827] relative min-h-[401px]">
+                    <h6 class="text-base font-medium text-white mb-6">Pro</h6>
+                    <div class="inline-flex items-center relative space-x-1">
+                        <span id="pro-price" class="text-4xl font-bold text-white">$599</span>
+                        <span class="text-sm font-medium text-[#6B7280] align-sub">/</span>
+                        <span id="pro-frequency" class="text-sm font-medium text-[#6B7280] align-sub absolute bottom-0 -right-4">mo</span>
+                    </div>
+                    <hr class="border-[#E5E7EB] my-6 space-y-2">
+                    <ul class="flex flex-col space-y-2 min-h-[116px]">
+                        <li class="flex items-center space-x-1.5"><img src="images/check-white.svg" alt="Check Icon"><p class="text-sm text-[#D1D5DB]">Up to 1000 interviews/month</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check-white.svg" alt="Check Icon"><p class="text-sm text-[#D1D5DB]">Ability to add Custom Questions</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check-white.svg" alt="Check Icon"><p class="text-sm text-[#D1D5DB]">Live coding interview</p></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="h-[51px] w-full flex items-center justify-center text-sm text-white hover:text-white gradient-border relative mt-12 bg-[linear-gradient(180deg,#0068EC,#00BBF9)]">Get Started</a>
+                    <div class="absolute top-0 bottom-0 left-0">
+                        <img src="images/oval.svg" alt="Oval">
+                    </div>
+                    </div>
+                </div>
+            
+                <!-- Enterprise Plan -->
+                <div class="max-md:col-span-12 max-lg:col-span-6 max-lg:mb-4 col-span-3">
+                    <div class="p-6 border border-[#E5E7EB] rounded-xl bg-white min-h-[401px]">
+                    <h6 class="text-base font-medium text-[#111827] mb-6">Enterprise</h6>
+                    <div class="inline-flex items-center relative space-x-1">
+                        <span class="text-4xl font-bold text-[#111827]">Talk to Sales</span>
+                    </div>
+                    <hr class="border-[#E5E7EB] my-6 space-y-2">
+                    <ul class="flex flex-col space-y-2 min-h-[116px]">
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Everything in Pro</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">A custom number of interviews per month</p></li>
+                        <li class="flex items-center space-x-1.5"><img src="images/check.svg" alt="Check Icon"><p class="text-sm text-[#445E7C]">Customizations as per your needs</p></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="h-[51px] w-full flex items-center justify-center text-smhover:bg-[linear-gradient(180deg,#0068EC,#00BBF9)] text-[#0068EC] gradient-border relative mt-12 hover:text-white hover:bg-[linear-gradient(180deg,#0068EC,#00BBF9)]">Contact Sales</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQs -->
+        <section class="max-md:py-8 py-25 max-2xl:px-5">
+        <div class="container">
+            <h2 class="max-lg:text-3xl lg:text-[40px] font-bold text-[#111827] text-center max-w-[550px] w-full mx-auto">Frequently asked questions</h2>
+            <div class="max-w-4xl mx-auto mt-16">
+                <!-- FAQ Item 1 -->
+                <div class="border border-[#E5E7EB] rounded-xl mb-6 bg-[#F9FAFB]">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none rounded-xl cursor-pointer" onclick="toggleAccordion(1)">
+                    <span class="text-lg font-medium max-md:text-start">How does the AI interviewer work?</span>
+                    <span id="icon-1" class="text-gray-600 text-4xl">+</span>
+                    </button>
+                    <div id="content-1" class="hidden pb-6 px-6">
+                    <p class="text-[#445E7C]">Yes! Universities can tailor interview questions and evaluation metrics to align with their admission criteria</p>
+                    </div>
+                </div>
+            
+                <!-- FAQ Item 2 -->
+                <div class="border border-[#E5E7EB] rounded-xl mb-6 bg-[#F9FAFB]">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none rounded-xl cursor-pointer" onclick="toggleAccordion(2)">
+                    <span class="text-lg font-medium max-md:text-start">Can we customize interview questions?</span>
+                    <span id="icon-2" class="text-gray-600 text-4xl">+</span>
+                    </button>
+                    <div id="content-2" class="hidden pb-6 px-6">
+                    <p class="text-[#445E7C]">Yes! Universities can tailor interview questions and evaluation metrics to align with their admission criteria</p>
+                    </div>
+                </div>
+            
+                <!-- FAQ Item 3 -->
+                <div class="border border-[#E5E7EB] rounded-xl mb-6 bg-[#F9FAFB]">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none rounded-xl cursor-pointer" onclick="toggleAccordion(3)">
+                    <span class="text-lg font-medium max-md:text-start">Is Smart Admissions available in multiple languages?</span>
+                    <span id="icon-3" class="text-gray-600 text-4xl">+</span>
+                    </button>
+                    <div id="content-3" class="hidden pb-6 px-6">
+                    <p class="text-[#445E7C]">Yes! Universities can tailor interview questions and evaluation metrics to align with their admission criteria</p>
+                    </div>
+                </div>
+            
+                <!-- FAQ Item 4 -->
+                <div class="border border-[#E5E7EB] rounded-xl mb-6 bg-[#F9FAFB]">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none rounded-xl cursor-pointer" onclick="toggleAccordion(4)">
+                    <span class="text-lg font-medium max-md:text-start">How does it ensure fairness?</span>
+                    <span id="icon-4" class="text-gray-600 text-4xl">+</span>
+                    </button>
+                    <div id="content-4" class="hidden pb-6 px-6">
+                    <p class="text-[#445E7C]">Yes! Universities can tailor interview questions and evaluation metrics to align with their admission criteria</p>
+                    </div>
+                </div>
+            
+                <!-- FAQ Item 5 -->
+                <div class="border border-[#E5E7EB] rounded-xl mb-6 bg-[#F9FAFB]">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none rounded-xl cursor-pointer" onclick="toggleAccordion(5)">
+                    <span class="text-lg font-medium max-md:text-start">How do we integrate Smart Admissions into our existing process?</span>
+                    <span id="icon-5" class="text-gray-600 text-4xl">+</span>
+                    </button>
+                    <div id="content-5" class="hidden pb-6 px-6">
+                    <p class="text-[#445E7C]">Yes, Tailwind CSS is open-source and free to use.</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="py-11 bg-[#F9FAFB] max-2xl:px-5">
+        <div class="container">
+            <div class="flex items-center max-md:flex-col max-md:items-center  max-md:space-y-4 justify-between pb-4 border-b border-[#E5E7EB]">
+                <a href="index.html"><img src="images/logo-footer.svg" alt="Footer Icon"></a>
+                <ul class="flex items-center space-x-4">
+                    <li><a href="#" class="w-9 h-9 rounded-full border border-[#292D32] flex items-center justify-center"><img src="images/linkedin.svg" alt="Linkedin Icon"></a></li>
+                    <li><a href="#" class="w-9 h-9 rounded-full border border-[#292D32] flex items-center justify-center"><img src="images/fb.svg" alt="Facebook Icon"></a></li>
+                    <li><a href="#" class="w-9 h-9 rounded-full border border-[#292D32] flex items-center justify-center"><img src="images/x.svg" alt="X Icon"></a></li>
+                    <li><a href="#" class="w-9 h-9 rounded-full border border-[#292D32] flex items-center justify-center"><img src="images/instagram.svg" alt="Instagram Icon"></a></li>
+                </ul>
+            </div>
+            <div class="flex items-center max-md:flex-col max-md:items-center  max-md:space-y-4 justify-center space-x-6 pt-9">
+                <small>© Copyrights 2023 . All rights reserved. </small>
+                <span class="max-md:hidden">|</span>
+                <ul class="flex items-center space-x-10">
+                    <li><a href="#" class="max-md:text-xs text-sm text-[#292D32]">Privacy Policy</a></li>
+                    <li><a href="#" class="max-md:text-xs text-sm text-[#292D32]">Terms & Conditions</a></li>
+                    <li><a href="#" class="max-md:text-xs text-sm text-[#292D32]">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

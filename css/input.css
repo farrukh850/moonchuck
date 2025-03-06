@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@layer utilities {
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Light.otf') format('otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Medium.otf') format('otf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Heavy.otf') format('otf');
+    font-weight: 700;
+}
+body{
+    font-family: "Onest", sans-serif;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.gradient-border {
+    position: relative;
+    padding: 20px; /* Inner padding */
+    border-radius: 100px; /* Optional: Rounded corners */
+    cursor: pointer;
+    z-index: 100;
+}
+  
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #0068EC, #00BBF9); /* Gradient for the border */
+    border-radius: 100px; /* Match outer radius */
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    padding: 1px; /* Border width */
+}
+
+@keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.7);
+      opacity: 0;
+    }
+  }
+
+  .ripple {
+    width: 48px;
+    height: 48px;
+    background-color: #36B37E;
+    border-radius: 50%;
+  }
+
+  .ripple::before,
+  .ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px; /* Match the size of the main circle */
+    height: 48px; /* Match the size of the main circle */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    animation: ripple 1.5s infinite;
+  }
+
+  .ripple::after {
+    animation-delay: 0.75s; /* Delay the second ripple */
+  }
+
+
+}
+@media (max-width:992px)  {
+  .ripple {
+    width: 20px;
+    height: 20px;
+    background-color: #36B37E;
+    border-radius: 50%;
+  }
+
+  .ripple::before,
+  .ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px; /* Match the size of the main circle */
+    height: 30px; /* Match the size of the main circle */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    animation: ripple 1.5s infinite;
+  }
+
+  .ripple::after {
+    animation-delay: 0.75s; /* Delay the second ripple */
+  }    
+}
