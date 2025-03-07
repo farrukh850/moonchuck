@@ -106,3 +106,18 @@ function toggleAccordion(id) {
 
   monthlyButton.addEventListener("click", () => updatePrices("monthly"));
   yearlyButton.addEventListener("click", () => updatePrices("yearly"));
+
+  // Smooth scroll to section
+  document.querySelectorAll('.scroll-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
