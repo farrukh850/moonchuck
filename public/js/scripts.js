@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.slider').slick({
       centerMode: true,
       slidesToShow: 2.2,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 1500,
       dots: false,
       pauseOnHover: false,
