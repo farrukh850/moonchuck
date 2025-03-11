@@ -29,6 +29,12 @@ body{
     cursor: pointer;
     z-index: 100;
 }
+.gradient-button:hover{
+  background: #1565C0 !important;
+} 
+.gradient-button:focus{
+  background: #64B5F6 !important;
+} 
   
 .gradient-border::before {
     content: '';
@@ -110,5 +116,5 @@ body{
 
   .ripple::after {
     animation-delay: 0.75s; /* Delay the second ripple */
-  }    
+  }   
 }
