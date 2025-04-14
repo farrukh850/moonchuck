@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best robotic kits to enhance your learning experience.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind generated CSS -->
+    <link href="css/output.css" rel="stylesheet">
+    <!-- Slick Slider included -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>MoonChuck</title>
+</head>
+<body>
+    <!-- Top navbar and Banner -->
+    <header class="relative bg-black z-[1000]">
+        <div class="container">
+            <nav class="lg:pt-9 lg:pb-10 py-4 flex items-center justify-between relative z-50 px-4 md:px-8">
+                <!-- Logo -->
+                <a href="index.html"><img src="images/Logo.svg" alt="Smart Admissions"></a>
+            
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-16 items-center">
+                  <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-1.svg" alt="Services Icon"><p class="text-base text-white">Services</p></a></li>
+                  <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-icon2.svg" alt="Products Icon"><p class="text-base text-white">Products</p></a></li>
+                  <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-icon3.svg" alt="Blogs Icon"><p class="text-base text-white">Blogs</p></a></li>
+                  <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-icon4.svg" alt="About Icon"><p class="text-base text-white">About</p></a></li>
+                  <li><a href="#why-choose" class="ms-6 scroll-link flex items-center justify-center w-[119px] text-base text-white h-10 bg-[rgba(255,255,255,0.2)]">Get Started</a></li>
+                </ul>
+            
+                <!-- Hamburger Menu (Mobile) -->
+                <button class="md:hidden text-white focus:outline-none cursor-pointer" onclick="toggleMenu()">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden p-4 relative z-50">
+                <ul class="flex md:hidden flex-col space-y-4 items-start">
+                    <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-1.svg" alt="Services Icon"><p class="text-base text-white">Services</p></a></li>
+                    <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-icon2.svg" alt="Products Icon"><p class="text-base text-white">Products</p></a></li>
+                    <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-icon3.svg" alt="Blogs Icon"><p class="text-base text-white">Blogs</p></a></li>
+                    <li><a href="#why-choose" class="scroll-link flex items-center gap-2"><img src="images/navbar-icon4.svg" alt="About Icon"><p class="text-base text-white">About</p></a></li>
+                    <li><a href="#why-choose" class="lg:ms-6 scroll-link flex items-center justify-center w-[119px] text-base text-white h-10 bg-[rgba(255,255,255,0.2)]">Get Started</a></li>
+                  </ul>
+            </div>
+        </div>
+    </header>
+    <main class="bg-black">
+        <!--Banner  -->
+        <section class="bg-black border-t border-[rgba(255,255,255,0.16)] h-full min-h-full lg:min-h-[calc(100vh-119px)] relative py-10 lg:py-[127px]">
+            <div class="container border-r border-[rgba(255,255,255,0.16)] border-l h-full z-[1000] relative">
+               <div class="flex flex-col justify-between items-center h-full">
+                <div class="max-w-[948px] mx-auto text-center z-50 relative">
+                    <h1 class="font-radio font-semibold text-4xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-gray-600 leading-12 lg:leading-24 mb-12">Building and Scaling Bold Ideas</h1>
+                    <p class="text-xl max-w-[715px] mx-auto text-[rgba(255,255,255,0.6)] font-urbanist font-medium">From AI consulting and data solutions to accelerator programs and proprietary products, we’re shaping the future of intelligent technology.</p>
+                    <img src="images/banner-recta-bottom-left.svg" class="absolute left-[-46px] bottom-[-65px]" alt="Banner Icon">
+                    <img src="images/banner-recta-top-right.svg" class="absolute right-[-46px] top-[-65px]" alt="Banner Icon">
+                </div>
+                <button class="flex items-center gap-2.5 w-[166px] mt-10 lg:mt-[196px] h-11 justify-center bg-white z-50 relative"><p class="text-base text-black">Get Started</p><img src="images/get-started-arrow.svg" alt="Get Started Arrow"></button>
+               </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 z-10">
+                <img src="images/banner-circle.svg" class="w-full object-top h-full" alt="Banner Black circle">
+            </div>
+            <div class="absolute bottom-0 left-0 right-0">
+                <img src="images/banner-glow.svg" class="w-full object-top h-full" alt="Banner Black circle">
+            </div>
+        </section>
+        <!-- Our Services -->
+        <section class="pt-10 pb-5 lg:pt-28 lg:pb-10 relative">
+        <div class="container">
+            <div class="flex flex-col gap-6 items-center">
+                <span class="h-10 flex items-center justify-center px-6.5 text-white text-[17px] border border-[rgba(255,255,255,0.16)] rounded-[70px]">Our Services</span>
+                <h2 class="font-radio max-w-[889px] leading-[120%] text-center mx-auto font-semibold text-3xl lg:text-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white via-[rgba(255,255,255,1)] to-[rgba(153,153,153,1)]">AI Automation, Development & Precision Labelling</h2>
+            </div>
+            <div class="grid grid-cols-12 items-center gap-6 mt-12 pb-10 lg:pb-[170px]">
+                <div class="col-span-12 lg:col-span-4 min-h-[257px] flex flex-col gap-3 items-start border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 pb-14 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/service-icon1.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <h3 class="text-white text-xl font-radio font-semibold">Applied AI Consulting</h3>
+                    <p class="text-base text-[#D3D3D6] font-urbanist font-medium">Transform your business with strategy, agent development, and process automation.</p>
+                    <div class="absolute w-8 h-[4px] bg-gradient-to-r from-[#8F5AF3] to-[#ADEEFF] top-0 left-8.5">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 min-h-[257px] flex flex-col gap-3 items-start border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 pb-14 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/service-icon2.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <h3 class="text-white text-xl font-radio font-semibold">Data Set Solutions
+                    </h3>
+                    <p class="text-base text-[#D3D3D6] font-urbanist font-medium">Custom-built training and evaluation datasets to power your AI projects.
+                    </p>
+                    <div class="absolute w-8 h-[4px] bg-gradient-to-r from-[#8F5AF3] to-[#ADEEFF] top-0 left-8.5">
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 min-h-[257px] flex flex-col gap-3 items-start border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 pb-14 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/service-icon3.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <h3 class="text-white text-xl font-radio font-semibold">Human-in-the-Loop Integration
+                    </h3>
+                    <p class="text-base text-[#D3D3D6]  font-urbanist font-medium">Enhancing AI precision with the perfect blend of human expertise.</p>
+                    <div class="absolute w-8 h-[4px] bg-gradient-to-r from-[#8F5AF3] to-[#ADEEFF] top-0 left-8.5">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6 items-start">
+                <span class="h-10 flex items-center justify-center px-6.5 text-white text-[17px] border border-[rgba(255,255,255,0.16)] rounded-[70px]">Why Moonchuck</span>
+                <h2 class="font-radio leading-[120%] mx-auto font-semibold text-3xl lg:text-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white via-[rgba(255,255,255,1)] to-[rgba(153,153,153,1)]">Building Smarter AI with Human Expertise & Intelligent Automation</h2>
+            </div>
+            <div class="grid grid-cols-12 items-stretch gap-2.5 mt-12  pb-10 lg:pb-[170px]">
+                <div class="grid grid-cols-12 col-span-12 lg:col-span-8 gap-2.5">
+                <div class="col-span-12 lg:col-span-6 min-h-[216px] flex flex-col gap-2.5 items-start border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/why-icon1.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <h3 class="text-white text-xl font-radio font-semibold">AI, Supercharged by Humans</h3>
+                    <p class="text-base text-[#D3D3D6] font-urbanist font-medium">Expert-driven data and human-in-the-loop systems make AI smarter and safer. </p>
+                </div>
+                <div class="col-span-12 lg:col-span-6 min-h-[216px] flex flex-col gap-2.5 items-start border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/why-icon2.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <h3 class="text-white text-xl font-radio font-semibold">Seamless AI Automation</h3>
+                    <p class="text-base text-[#D3D3D6] font-urbanist font-medium">We automate workflows, reducing effort and integrating smoothly.</p>
+                </div>
+                <div class="col-span-12 min-h-[400px] lg:min-h-[262px] flex flex-col gap-2.5 lg:items-start lg:justify-center border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/why-icon1.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <div class="max-w-[322px]">
+                        <h3 class="text-white text-xl font-radio font-semibold">From Idea to AI Reality</h3>
+                        <p class="text-base text-[#D3D3D6] font-urbanist font-medium">Moonchuck turns concepts into scalable AI applications, from intelligent assistants to complex automation systems.</p>
+                    </div>
+                    <div class="absolute right-0 bottom-0">
+                        <img src="images/idea-to-reality.svg" alt="Moon Chuck">
+                    </div>
+                </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4 min-h-[495px] flex flex-col gap-2.5 items-start border border-[rgba(255,255,255,0.09)] rounded-2xl p-8 relative">
+                    <div class="w-11 h-11 flex items-center justify-center">
+                        <img src="images/why-icon3.svg" class="w-full h-full object-contain" alt="Applied AI Consulting">
+                    </div>
+                    <h3 class="text-white text-xl font-radio font-semibold">Precision Labeling & Evaluation</h3>
+                    <p class="text-base text-[#D3D3D6] font-urbanist font-medium">High-quality data powers great AI. Our expert labeling and evaluation ensure accurate, reliable AI performance.</p>
+                    <div class="absolute bottom-[47px] right-0 left-0">
+                        <img src="images/moonchuck-pattern.svg" alt="Moon Chuck">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 right-0">
+            <img src="images/circles-1.svg" alt="Circles">
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 left-0">
+            <img src="images/circles-2.svg" alt="Circles">
+        </div>
+        <div class="absolute top-0 left-0 right-0 bottom-0 h-full w-full">
+            <img src="images/dots.svg" class="w-full h-full object-cover" alt="Dots">
+        </div>
+        </section>
+        <!-- Shaping the Future of AI, Together -->
+        <section class="lg:py-28 relative">
+            <div class="container">
+                <div class="flex flex-col gap-6 items-center">
+                    <span class="h-10 flex items-center justify-center px-6.5 text-white text-[17px] border border-[rgba(255,255,255,0.16)] rounded-[70px]">A Note from Our Founder</span>
+                    <h2 class="font-radio max-w-[889px] leading-[120%] text-center mx-auto font-semibold text-3xl lg:text-[64px] text-transparent bg-clip-text bg-gradient-to-r from-white via-[rgba(255,255,255,1)] to-[rgba(153,153,153,1)]">Shaping the Future of AI, Together</h2>
+                </div>
+                <div class="mt-20">
+                    <div class="relative max-w-full lg:max-w-[850px] mx-auto">
+                       <div class="py-10 lg:py-[140px] rounded-sm  px-10 lg:px-[133px] bg-black border border-[rgba(255,255,255,0.1)] relative z-50">
+                        <p class="text-xl lg:text-[28px] leading-[130%] text-[#D3D3D6] relative z-50 font-urbanist italic">Dear Innovators,<br><br> When I founded Moonchuck, my vision was simple: to create AI that works seamlessly with human expertise. AI isn’t just about automation—it’s about building intelligent systems that enhance our abilities, not replace them.
+                            <br><br>
+                            We’ve seen firsthand how businesses struggle with messy data, inefficient automation, and AI models that fall short. That’s why we built Moonchuck—to bridge the gap between cutting-edge AI and real-world impact. With a focus on high-quality data, seamless automation, and practical AI applications, we help businesses unlock AI’s full potential.
+                            <br><br>
+                            Our team is committed to making AI more accessible, ethical, and effective. Whether you're developing AI products or streamlining operations, we’re here to power your journey.
+                        Let’s build the future of AI—together</p>
+                        <div class="flex items-center mt-18 gap-8">
+                            <div class="flex flex-col">
+                                <p class="text-xl leading-[130%] text-white font-urbanist font-medium">Daniel O’Shea</p>
+                                <p class="text-xl leading-[130%] text-white font-urbanist">Founder, Moonchuck</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-full overflow-hidden">
+                                <img src="images/founder.png" alt="Founder Image" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="absolute bottom-0 right-0">
+                            <img src="images/innovator-bg.svg" alt="Innovator Bg">
+                        </div>
+                       </div>
+                       <div class="w-full absolute top-0 left-0 bottom-0 -rotate-6 hfull bg-black border border-[rgba(255,255,255,0.1)] z-10 hidden lg:block">
+                        <img src="images/blob.svg" alt="Blob" class="absolute right-0 bottom-0">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <div class="py-36 min-h-[689px] h-full relative">
+            <div class="container relative z-50">
+                <div class="px-12 py-14 border border-[rgba(255,255,255,0.06)] rounded-2xl relative flex-col lg:flex-row flex items-start lg:items-center gap-10 bg-[rgba(13,14,20,1)]">
+                    <div class="flex flex-col gap-2.5">
+                        <h4 class="text-3xl text-white font-font font-radio">Let’s Build Smarter AI, Together</h4>
+                        <p class="text-base text-white">Ready to take your AI to the next level? Whether you need automation, 
+                        AI development, or precision data labeling, Moonchuck has you covered.</p>
+                    </div>
+                    <a href="#" class="w-[151px] h-10 flex items-center justify-center gap-2 bg-white"><p class="text-base text-black leading-5 font-urbanist">Get Started</p><img src="images/cta-arrow.svg" alt="CTA Arrow"></a>
+                    <img src="images/cta-bg.svg" alt="CTA Bg" class="absolute h-full top-0 bottom-0 right-10">
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 h-20 lg:h-[256px] right-0 z-10">
+                <img src="images/banner-circle.svg" class="w-full object-top object-cover h-full" alt="Banner Black circle">
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 backdrop-blur-custom">
+                <img src="images/banner-glow.svg" class="w-full object-top h-40 lg:h-[800px] object-cover" alt="Banner Black circle">
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="py-12 bg-black border border-[rgba(26, 28, 41, 1)] lg:pb-[125px]">
+            <div class="container">
+                <div class="flex flex-col md:flex-row gap-5 lg:gap-0 items-center justify-between">
+                    <a href="#"><img src="images/logo.svg" alt="Moon Chuck"></a>
+                    <ul class="flex flex-col md:flex-row gap-2 items-center md:gap-7">
+                        <li><a href="#" class="lg:p-2 lg:font-sm font-[10px] leading-6 text-[#7A7B85]">Solutions</a></li>
+                        <li><a href="#" class="lg:p-2 lg:font-sm font-[10px] leading-6 text-[#7A7B85]">Pricing</a></li>
+                        <li><a href="#" class="lg:p-2 lg:font-sm font-[10px] leading-6 text-[#7A7B85]">Get Started</a></li>
+                        <li><a href="#" class="lg:p-2 lg:font-sm font-[10px] leading-6 text-[#7A7B85]">Use cases</a></li>
+                        <li><a href="#" class="lg:p-2 lg:font-sm font-[10px] leading-6 text-[#7A7B85]">Documentation</a></li>
+                    </ul>
+                </div>
+                <hr class="border border-[rgba(255,255,255,0.2)] my-12">
+                <div class="flex items-center justify-between">
+                    <small class="text-sm leading-6 text-[#7A7B85]">Moonchuck - 2025</small>
+                    <ul class="flex items-center gap-6">
+                        <li><a href="#"><img src="images/insta.svg" alt="Insta"></a></li>
+                        <li><a href="#"><img src="images/fb.svg" alt="FB"></a></li>
+                        <li><a href="#"><img src="images/youtube.svg" alt="Youtube"></a></li>
+                        <li><a href="#"><img src="images/x.svg" alt="X"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- Footer -->
+     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
