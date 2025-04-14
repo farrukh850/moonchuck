@@ -4,6 +4,7 @@
     "tailwindcss": "^4.0.10"
   },
   "scripts": {
-  "build": "tailwindcss -i public/css/input.css -o public/css/output.css --minify"
+  "build": "tailwindcss -i public/css/input.css -o public/css/output.css --minify",
+  "dev": "tailwindcss -i public/css/input.css -o public/css/output.css --watch"
 }
 }
