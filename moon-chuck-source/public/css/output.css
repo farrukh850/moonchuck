@@ -2238,6 +2238,11 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .lg\:left-\[-46px\] {
+    @media (width >= 64rem) {
+      left: -46px;
+    }
+  }
   .lg\:col-span-4 {
     @media (width >= 64rem) {
       grid-column: span 4 / span 4;
