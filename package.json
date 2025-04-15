@@ -4,7 +4,10 @@
     "tailwindcss": "^4.0.10"
   },
   "scripts": {
-  "build": "tailwindcss -i public/css/input.css -o public/css/output.css --minify",
-  "dev": "tailwindcss -i public/css/input.css -o public/css/output.css --watch"
-}
+  "build": "npx tailwindcss -i public/css/input.css -o public/css/output.css --minify",
+  "dev": "npx tailwindcss -i public/css/input.css -o public/css/output.css --watch"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
 }
